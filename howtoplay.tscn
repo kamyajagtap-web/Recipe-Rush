@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://06pr78x4vdpx"]
+
+[ext_resource type="FontFile" uid="uid://lpvlb7jxd3ul" path="res://assets/Bubble Gum PERSONAL USE ONLY!.ttf" id="1_4wcgq"]
+[ext_resource type="Texture2D" uid="uid://b525t4xiew6ex" path="res://assets/Untitled_design__9_-removebg-preview (1).png" id="2_4wcgq"]
+[ext_resource type="AudioStream" uid="uid://c6u583vhoiy3p" path="res://assets/goldensoundlabs-baking-time-217441.mp3" id="3_0e3kn"]
+
+[node name="Node2D" type="Node2D" unique_id=324428529]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1346817861]
+offset_top = 4.0
+offset_right = 1159.0
+offset_bottom = 644.0
+color = Color(0.85246545, 0.7175448, 0.8055248, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect" unique_id=1963576800]
+z_index = 100
+layout_mode = 0
+offset_left = 239.0
+offset_top = 17.0
+offset_right = 914.0
+offset_bottom = 134.0
+theme_override_colors/default_color = Color(0.80239344, 4.042983e-06, 0.4362364, 1)
+theme_override_fonts/normal_font = ExtResource("1_4wcgq")
+theme_override_font_sizes/normal_font_size = 84
+text = "How to Play"
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2111178219]
+position = Vector2(568.00006, 379)
+scale = Vector2(1.1240001, 0.955)
+texture = ExtResource("2_4wcgq")
+
+[node name="instructions" type="RichTextLabel" parent="Sprite2D" unique_id=834708835]
+offset_left = -219.75095
+offset_top = -187.43456
+offset_right = 213.5231
+offset_bottom = 178.01051
+theme_override_colors/default_color = Color(0.8039216, 0, 0.43529412, 1)
+theme_override_font_sizes/normal_font_size = 35
+text = "Watch the recipe
+
+Remember the order
+
+Add the ingredients
+
+Bake the perfect cake!"
+horizontal_alignment = 1
+
+[node name="background music" type="AudioStreamPlayer2D" parent="." unique_id=888616107]
+stream = ExtResource("3_0e3kn")
+volume_db = -12.606
+autoplay = true
