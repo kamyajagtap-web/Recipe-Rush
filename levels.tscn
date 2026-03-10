@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://b8qce3n5umx7h"]
+
+[ext_resource type="FontFile" uid="uid://lpvlb7jxd3ul" path="res://assets/Bubble Gum PERSONAL USE ONLY!.ttf" id="1_02xe8"]
+[ext_resource type="Texture2D" uid="uid://deajog7jtljsw" path="res://assets/easy.png" id="2_xv4fl"]
+[ext_resource type="Texture2D" uid="uid://fflo7oillgd4" path="res://assets/med.png" id="3_b0aun"]
+[ext_resource type="Texture2D" uid="uid://c3w41dberbbpp" path="res://assets/hard.png" id="4_x8mww"]
+
+[node name="Node2D" type="Node2D" unique_id=812698673]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=347842894]
+offset_top = 4.0
+offset_right = 1159.0
+offset_bottom = 644.0
+color = Color(0.85246545, 0.7175448, 0.8055248, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect" unique_id=603692557]
+z_index = 100
+layout_mode = 0
+offset_left = 267.0
+offset_top = 22.0
+offset_right = 942.0
+offset_bottom = 139.0
+theme_override_colors/default_color = Color(0.80239344, 4.042983e-06, 0.4362364, 1)
+theme_override_fonts/normal_font = ExtResource("1_02xe8")
+theme_override_font_sizes/normal_font_size = 84
+text = "Levels"
+horizontal_alignment = 1
+
+[node name="Volume" type="RichTextLabel" parent="ColorRect" unique_id=128289462]
+z_index = 90
+layout_mode = 0
+offset_left = 170.0
+offset_top = 268.0
+offset_right = 366.0
+offset_bottom = 339.0
+theme_override_colors/default_color = Color(0.8039216, 0, 0.43529412, 1)
+theme_override_font_sizes/normal_font_size = 45
+text = "Easy"
+horizontal_alignment = 1
+
+[node name="easy" type="Sprite2D" parent="." unique_id=258510105]
+position = Vector2(269, 348.00003)
+scale = Vector2(0.61, 0.621)
+texture = ExtResource("2_xv4fl")
+
+[node name="med" type="Sprite2D" parent="." unique_id=666061939]
+position = Vector2(601, 349)
+scale = Vector2(0.63, 0.616)
+texture = ExtResource("3_b0aun")
+
+[node name="hard" type="Sprite2D" parent="." unique_id=7555403]
+position = Vector2(927, 349)
+scale = Vector2(0.60850006, 0.618)
+texture = ExtResource("4_x8mww")
+
+[node name="Volume" type="RichTextLabel" parent="." unique_id=2076798843]
+offset_left = 506.0
+offset_top = 275.0
+offset_right = 702.0
+offset_bottom = 346.0
+theme_override_colors/default_color = Color(0.8039216, 0, 0.43529412, 1)
+theme_override_font_sizes/normal_font_size = 45
+text = "Medium"
+horizontal_alignment = 1
+
+[node name="Volume2" type="RichTextLabel" parent="." unique_id=813609940]
+offset_left = 830.0
+offset_top = 275.0
+offset_right = 1026.0
+offset_bottom = 346.0
+theme_override_colors/default_color = Color(0.8039216, 0, 0.43529412, 1)
+theme_override_font_sizes/normal_font_size = 45
+text = "Hard"
+horizontal_alignment = 1
