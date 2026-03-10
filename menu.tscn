@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cjvnuvogl5osf"]
+
+[ext_resource type="Script" uid="uid://kqmv6euhpwsq" path="res://homemenu.gd" id="1_mae5d"]
+[ext_resource type="FontFile" uid="uid://lpvlb7jxd3ul" path="res://assets/Bubble Gum PERSONAL USE ONLY!.ttf" id="2_4hy44"]
+[ext_resource type="AudioStream" uid="uid://c6u583vhoiy3p" path="res://assets/goldensoundlabs-baking-time-217441.mp3" id="3_ytr4m"]
+
+[node name="Menu" type="Node2D" unique_id=217108690]
+script = ExtResource("1_mae5d")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=726178038]
+offset_top = 4.0
+offset_right = 1159.0
+offset_bottom = 644.0
+color = Color(0.85246545, 0.7175448, 0.8055248, 1)
+
+[node name="play" type="Button" parent="." unique_id=1605425761]
+offset_left = 439.0
+offset_top = 204.0
+offset_right = 728.0
+offset_bottom = 277.0
+theme_override_colors/font_color = Color(0.9386757, 0.6997158, 0.8321288, 1)
+theme_override_font_sizes/font_size = 40
+text = "Play"
+
+[node name="howtoplay" type="Button" parent="." unique_id=164851563]
+offset_left = 439.0
+offset_top = 310.0
+offset_right = 726.0
+offset_bottom = 382.0
+theme_override_colors/font_color = Color(0.9386757, 0.6997158, 0.8321288, 1)
+theme_override_font_sizes/font_size = 40
+text = "How to Play"
+
+[node name="settings" type="Button" parent="." unique_id=1611584337]
+offset_left = 439.0
+offset_top = 412.0
+offset_right = 728.0
+offset_bottom = 490.0
+theme_override_colors/font_color = Color(0.9386757, 0.6997158, 0.8321288, 1)
+theme_override_font_sizes/font_size = 40
+text = "Settings"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=572911457]
+z_index = 100
+offset_left = 256.0
+offset_top = 47.0
+offset_right = 931.0
+offset_bottom = 164.0
+theme_override_colors/default_color = Color(0.80239344, 4.042983e-06, 0.4362364, 1)
+theme_override_fonts/normal_font = ExtResource("2_4hy44")
+theme_override_font_sizes/normal_font_size = 84
+text = "Recipe Rush"
+horizontal_alignment = 1
+
+[node name="background music" type="AudioStreamPlayer2D" parent="." unique_id=1872245477]
+stream = ExtResource("3_ytr4m")
+
+[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="howtoplay" to="." method="_on_howtoplay_pressed"]
+[connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
