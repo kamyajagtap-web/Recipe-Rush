@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bivc2f0oeom4s"]
+
+[ext_resource type="AudioStream" uid="uid://c6u583vhoiy3p" path="res://assets/goldensoundlabs-baking-time-217441.mp3" id="1_3h6ak"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=433927814]
+stream = ExtResource("1_3h6ak")
+volume_db = -13.0
+autoplay = true
