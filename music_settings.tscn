@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dyopwqt3bisf7"]
+
+[ext_resource type="Script" uid="uid://dsy7pu4mb7yqm" path="res://music_settings.gd" id="1_jindn"]
+
+[node name="music settings" type="Control" unique_id=617894083]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jindn")
+bus_name = "Master"
+
+[node name="volume" type="Label" parent="." unique_id=910904741]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 11.0
+offset_right = 302.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 0.18039216, 0.73333335, 1)
+theme_override_font_sizes/font_size = 35
+text = "Music Volume"
+
+[node name="VSeparator" type="VSeparator" parent="." unique_id=1802211261]
+layout_mode = 0
+offset_left = 357.0
+offset_top = 14.0
+offset_right = 379.0
+offset_bottom = 69.0
+
+[node name="HSlider" type="HSlider" parent="." unique_id=1760548640]
+layout_mode = 0
+offset_left = 414.0
+offset_top = 31.0
+offset_right = 675.0
+offset_bottom = 50.0
+
+[node name="VSeparator2" type="VSeparator" parent="." unique_id=253399759]
+layout_mode = 0
+offset_left = 709.0
+offset_top = 14.0
+offset_right = 713.0
+offset_bottom = 66.0
+
+[node name="volumenum" type="Label" parent="." unique_id=2036856757]
+layout_mode = 0
+offset_left = 754.0
+offset_top = 12.0
+offset_right = 814.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(1, 0.18039216, 0.73333335, 1)
+theme_override_font_sizes/font_size = 35
+text = "100"
