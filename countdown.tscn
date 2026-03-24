@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://b654xwm5u2ftx"]
+
+[ext_resource type="Texture2D" uid="uid://c5st55d4aaifl" path="res://assets/blurbackground.png" id="1_ep8tu"]
+[ext_resource type="Script" uid="uid://bxins4cfrwl4r" path="res://countdown.gd" id="1_scgq4"]
+
+[node name="Node2D" type="Node2D" unique_id=1313642684]
+script = ExtResource("1_scgq4")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=99778902]
+offset_top = 4.0
+offset_right = 1159.0
+offset_bottom = 644.0
+color = Color(0.85246545, 0.7175448, 0.8055248, 1)
+
+[node name="UntitledDesign(16)" type="Sprite2D" parent="." unique_id=1627116470]
+position = Vector2(578.75, 321.74997)
+scale = Vector2(0.604427, 0.60046303)
+texture = ExtResource("1_ep8tu")
+
+[node name="Label" type="Label" parent="." unique_id=275743620]
+offset_left = 491.0
+offset_top = 97.0
+offset_right = 1655.0
+offset_bottom = 506.0
+theme_override_colors/font_color = Color(1, 0.18039216, 0.73333335, 1)
+theme_override_font_sizes/font_size = 300
+text = "Timer"
+
+[node name="Timer" type="Timer" parent="." unique_id=1734598171]
+wait_time = 4.0
+one_shot = true
+autostart = true
