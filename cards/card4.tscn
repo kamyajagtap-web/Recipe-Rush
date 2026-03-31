@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://ely4bwojvshl"]
+
+[ext_resource type="Texture2D" uid="uid://dqh6arj5esqkx" path="res://assets/ingredient cards/bakingpowder.png" id="1_i7rjy"]
+[ext_resource type="Script" uid="uid://lufpkaq4vjki" path="res://cards/card4.gd" id="2_ljn4f"]
+
+[node name="Node2D" type="Node2D" unique_id=1308903739]
+
+[node name="background" type="Sprite2D" parent="." unique_id=1783083264]
+position = Vector2(578.75, 321.74997)
+scale = Vector2(0.604427, 0.60046303)
+texture = ExtResource("1_i7rjy")
+script = ExtResource("2_ljn4f")

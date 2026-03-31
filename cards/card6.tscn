@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d1sm5fyl3mrur"]
+
+[ext_resource type="Script" uid="uid://4mcn6jvkk1ip" path="res://cards/card6.gd" id="1_8llxd"]
+[ext_resource type="Texture2D" uid="uid://d2vnosw1th3vk" path="res://assets/ingredient cards/flour.png" id="1_rbqn6"]
+
+[node name="Node2D" type="Node2D" unique_id=2133482166]
+script = ExtResource("1_8llxd")
+
+[node name="background" type="Sprite2D" parent="." unique_id=880030120]
+position = Vector2(578.75, 321.74997)
+scale = Vector2(0.604427, 0.60046303)
+texture = ExtResource("1_rbqn6")

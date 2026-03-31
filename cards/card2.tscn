@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bujg28pwxssrg"]
+
+[ext_resource type="Script" uid="uid://qurntvt12nn3" path="res://cards/card2.gd" id="1_g3c1s"]
+[ext_resource type="Texture2D" uid="uid://d0od6apw313j4" path="res://assets/ingredient cards/sugar.png" id="2_ki5bt"]
+
+[node name="Node2D" type="Node2D" unique_id=1482006080]
+script = ExtResource("1_g3c1s")
+
+[node name="background" type="Sprite2D" parent="." unique_id=635657805]
+position = Vector2(578.75, 321.74997)
+scale = Vector2(0.604427, 0.60046303)
+texture = ExtResource("2_ki5bt")

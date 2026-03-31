@@ -5,6 +5,8 @@ extends Node2D
 
 func _ready():
 	countdown.start()
+	await get_tree().create_timer(3.0).timeout
+	get_tree().change_scene_to_file("res://cards/card1.tscn")
 
 func time_left():
 	return int(countdown.time_left)

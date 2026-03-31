@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cm1eh7s5uy4jb"]
+
+[ext_resource type="Texture2D" uid="uid://cur0bji2pmtep" path="res://assets/ingredient cards/milk.png" id="1_yup41"]
+[ext_resource type="Script" uid="uid://dsp0lmibxuje2" path="res://cards/card1.gd" id="2_2bq0u"]
+
+[node name="Node2D" type="Node2D" unique_id=800136168]
+
+[node name="UntitledDesign(16)" type="Sprite2D" parent="." unique_id=1132022735]
+position = Vector2(578.75, 321.74997)
+scale = Vector2(0.604427, 0.60046303)
+texture = ExtResource("1_yup41")
+script = ExtResource("2_2bq0u")

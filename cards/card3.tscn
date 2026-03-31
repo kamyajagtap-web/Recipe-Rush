@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cikyg3omxeekp"]
+
+[ext_resource type="Script" uid="uid://b8jm2liwj6os7" path="res://cards/card3.gd" id="1_4k8ha"]
+[ext_resource type="Texture2D" uid="uid://bp3r1v2mq4ewj" path="res://assets/ingredient cards/eggs.png" id="1_jyv81"]
+
+[node name="Node2D" type="Node2D" unique_id=2047429136]
+script = ExtResource("1_4k8ha")
+
+[node name="background" type="Sprite2D" parent="." unique_id=1491451361]
+position = Vector2(578.75, 321.74997)
+scale = Vector2(0.604427, 0.60046303)
+texture = ExtResource("1_jyv81")

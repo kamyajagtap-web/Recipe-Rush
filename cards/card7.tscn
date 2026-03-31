@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cdkvdjiptu3l3"]
+
+[ext_resource type="Script" uid="uid://e8u4bx5vsfpk" path="res://cards/card7.gd" id="1_31wrn"]
+[ext_resource type="Texture2D" uid="uid://2cui8x5cls0c" path="res://assets/ingredient cards/salt.png" id="1_53t23"]
+
+[node name="Node2D" type="Node2D" unique_id=2038888293]
+script = ExtResource("1_31wrn")
+
+[node name="background" type="Sprite2D" parent="." unique_id=893157824]
+position = Vector2(578.75, 321.74997)
+scale = Vector2(0.604427, 0.60046303)
+texture = ExtResource("1_53t23")
