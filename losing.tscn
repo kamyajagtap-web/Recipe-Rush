@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dwsbdve8xq0mc"]
+
+[ext_resource type="Texture2D" uid="uid://drm1r1j62uqbw" path="res://assets/losing cake.png" id="1_fa25r"]
+
+[node name="Node2D" type="Node2D" unique_id=353138739]
+
+[node name="background" type="Sprite2D" parent="." unique_id=1073881348]
+position = Vector2(578.75, 321.74997)
+scale = Vector2(0.604427, 0.60046303)
+texture = ExtResource("1_fa25r")

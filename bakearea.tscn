@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://msd63og3ne8w" path="res://assets/food items/eggs.png" id="7_8tp6i"]
 [ext_resource type="Texture2D" uid="uid://benoh346td1gj" path="res://assets/food items/butter.png" id="8_30tqu"]
 [ext_resource type="Texture2D" uid="uid://cqo6yj5cgsuh3" path="res://assets/gears.png" id="9_oibg4"]
+[ext_resource type="PackedScene" uid="uid://b8iv2ek4v3n1s" path="res://ingredient.tscn" id="11_cv3xo"]
 
 [node name="area2D" type="Area2D" unique_id=1966559625]
 script = ExtResource("1_iyycv")
@@ -18,41 +19,6 @@ script = ExtResource("1_iyycv")
 position = Vector2(578.75, 321.74997)
 scale = Vector2(0.604427, 0.60046303)
 texture = ExtResource("1_dceli")
-
-[node name="milk" type="Sprite2D" parent="." unique_id=635112796]
-position = Vector2(112, 259)
-scale = Vector2(1.3836898, 1.2846154)
-texture = ExtResource("2_02a8a")
-
-[node name="sugar" type="Sprite2D" parent="." unique_id=523295919]
-position = Vector2(116.37499, 443.3125)
-scale = Vector2(1.126008, 1.0658214)
-texture = ExtResource("3_chuha")
-
-[node name="salt" type="Sprite2D" parent="." unique_id=558626717]
-position = Vector2(280, 380.00003)
-scale = Vector2(1.1902174, 0.99764144)
-texture = ExtResource("4_8tp6i")
-
-[node name="Flour" type="Sprite2D" parent="." unique_id=642250054]
-position = Vector2(977.0001, 288.00003)
-scale = Vector2(1.3527131, 1.318182)
-texture = ExtResource("5_30tqu")
-
-[node name="BakingPowder" type="Sprite2D" parent="." unique_id=1557218555]
-position = Vector2(1036.1875, 468.75)
-scale = Vector2(1.100352, 1.0495689)
-texture = ExtResource("6_oibg4")
-
-[node name="Eggs" type="Sprite2D" parent="." unique_id=1680507504]
-position = Vector2(806.99994, 535)
-scale = Vector2(1.1908396, 1.0752689)
-texture = ExtResource("7_8tp6i")
-
-[node name="Butter" type="Sprite2D" parent="." unique_id=295027142]
-position = Vector2(261, 551)
-scale = Vector2(1.1525974, 0.96473026)
-texture = ExtResource("8_30tqu")
 
 [node name="bake" type="Button" parent="." unique_id=289132317]
 offset_left = 433.0
@@ -64,11 +30,60 @@ theme_override_font_sizes/font_size = 40
 text = "Bake
 "
 
-[node name="TextureButton" type="TextureButton" parent="." unique_id=1523156054]
+[node name="settings" type="TextureButton" parent="." unique_id=1523156054]
 offset_left = 1044.0
-offset_top = -2.0
+offset_top = -465.0
 offset_right = 1491.0
-offset_bottom = 557.0
+offset_bottom = 94.0
 texture_normal = ExtResource("9_oibg4")
+flip_v = true
 
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[node name="milk" parent="." unique_id=421164906 instance=ExtResource("11_cv3xo")]
+position = Vector2(110, 255)
+scale = Vector2(1.35, 1.35)
+value = "milk"
+texture = ExtResource("2_02a8a")
+
+[node name="sugar" parent="." unique_id=1134652336 instance=ExtResource("11_cv3xo")]
+position = Vector2(123, 441)
+scale = Vector2(1.1, 1.1)
+value = "sugar"
+texture = ExtResource("3_chuha")
+
+[node name="salt" parent="." unique_id=1585990293 instance=ExtResource("11_cv3xo")]
+position = Vector2(279, 366)
+scale = Vector2(1.2, 1.2)
+value = "salt"
+texture = ExtResource("4_8tp6i")
+
+[node name="flour" parent="." unique_id=707330856 instance=ExtResource("11_cv3xo")]
+position = Vector2(977, 278)
+scale = Vector2(1.4, 1.4)
+value = "flour"
+flip_rotation = true
+texture = ExtResource("5_30tqu")
+
+[node name="bakingpowder" parent="." unique_id=741734760 instance=ExtResource("11_cv3xo")]
+position = Vector2(1030, 461)
+scale = Vector2(1.2, 1.2)
+value = "bakingpowder"
+flip_rotation = true
+texture = ExtResource("6_oibg4")
+
+[node name="eggs" parent="." unique_id=504757412 instance=ExtResource("11_cv3xo")]
+position = Vector2(806, 535)
+scale = Vector2(1.2, 1.2)
+value = "eggs"
+flip_rotation = true
+texture = ExtResource("7_8tp6i")
+
+[node name="butter" parent="." unique_id=1373231987 instance=ExtResource("11_cv3xo")]
+z_index = 99
+position = Vector2(271, 516.99994)
+rotation = 0.050614547
+scale = Vector2(1.1, 1.1)
+value = "butter"
+texture = ExtResource("8_30tqu")
+
+[connection signal="pressed" from="bake" to="." method="_on_bake_pressed"]
+[connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
