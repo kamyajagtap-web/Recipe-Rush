@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dwsbdve8xq0mc"]
+
+[ext_resource type="Script" uid="uid://ds42mxt01awl4" path="res://lose/losing.gd" id="1_8l831"]
+[ext_resource type="Texture2D" uid="uid://drm1r1j62uqbw" path="res://assets/losing cake.png" id="1_fa25r"]
+[ext_resource type="Texture2D" uid="uid://dttw76yjgv5xj" path="res://assets/greycircle.png" id="3_ccqc0"]
+[ext_resource type="Texture2D" uid="uid://dj8a88fhtkmiw" path="res://assets/greencircle.png" id="4_5crfy"]
+[ext_resource type="Texture2D" uid="uid://cqo6yj5cgsuh3" path="res://assets/gears.png" id="5_5crfy"]
+
+[node name="Node2D" type="Node2D" unique_id=353138739]
+script = ExtResource("1_8l831")
+
+[node name="background" type="Sprite2D" parent="." unique_id=1073881348]
+position = Vector2(578.75, 321.74997)
+scale = Vector2(0.604427, 0.60046303)
+texture = ExtResource("1_fa25r")
+
+[node name="result" type="Label" parent="." unique_id=1474483764]
+offset_left = 381.0
+offset_top = 14.0
+offset_right = 763.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(1, 0.18039216, 0.73333335, 1)
+theme_override_font_sizes/font_size = 35
+horizontal_alignment = 1
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=384125186]
+offset_left = 532.0
+offset_top = 66.0
+offset_right = 607.0
+offset_bottom = 141.0
+fill_mode = 4
+texture_under = ExtResource("3_ccqc0")
+texture_progress = ExtResource("4_5crfy")
+
+[node name="backbutton" type="Button" parent="." unique_id=179325401]
+offset_left = 468.0
+offset_top = 165.0
+offset_right = 673.0
+offset_bottom = 223.0
+theme_override_colors/font_color = Color(0.9386757, 0.6997158, 0.8321288, 1)
+theme_override_font_sizes/font_size = 25
+text = "Main Menu"
+
+[node name="settings" type="TextureButton" parent="." unique_id=698404854]
+offset_left = 1044.0
+offset_top = -465.0
+offset_right = 1491.0
+offset_bottom = 94.0
+texture_normal = ExtResource("5_5crfy")
+flip_v = true
+
+[connection signal="pressed" from="backbutton" to="." method="_on_backbutton_pressed"]
+[connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]

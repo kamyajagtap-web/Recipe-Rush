@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://uou4iuaypxdx"]
+
+[ext_resource type="Script" uid="uid://b1yxqlnfe68cc" path="res://win/winningconfetti.gd" id="1_7fkq4"]
+[ext_resource type="VideoStream" uid="uid://bjgbakjb71lup" path="res://winning-cake-_1_.ogv" id="1_8pamo"]
+[ext_resource type="Texture2D" uid="uid://cqo6yj5cgsuh3" path="res://assets/gears.png" id="3_6ijym"]
+
+[node name="Node2D" type="Node2D" unique_id=33404338]
+script = ExtResource("1_7fkq4")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1876125656]
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 1150.0
+offset_bottom = 648.0
+stream = ExtResource("1_8pamo")
+autoplay = true
+expand = true
+
+[node name="settings" type="TextureButton" parent="." unique_id=738591997]
+offset_left = 1044.0
+offset_top = -465.0
+offset_right = 1491.0
+offset_bottom = 94.0
+texture_normal = ExtResource("3_6ijym")
+flip_v = true
+
+[connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
