@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cwlhagmrdgaf4"]
+
+[ext_resource type="Script" uid="uid://d252mf8t73uqo" path="res://ingredientcard.gd" id="1_r45na"]
+[ext_resource type="Texture2D" uid="uid://dphmydhe3c26y" path="res://assets/ingredientcards/vanilla.png" id="2_3kocs"]
+
+[node name="Node2D" type="Node2D" unique_id=192565229]
+script = ExtResource("1_r45na")
+
+[node name="background" type="Sprite2D" parent="." unique_id=617669190]
+position = Vector2(578.75, 321.74997)
+scale = Vector2(0.604427, 0.60046303)
+texture = ExtResource("2_3kocs")
