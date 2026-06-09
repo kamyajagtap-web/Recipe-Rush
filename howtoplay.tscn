@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://06pr78x4vdpx"]
 
-[ext_resource type="FontFile" uid="uid://lpvlb7jxd3ul" path="res://assets/Bubble Gum PERSONAL USE ONLY!.ttf" id="1_4wcgq"]
-[ext_resource type="Texture2D" uid="uid://b525t4xiew6ex" path="res://assets/Untitled_design__9_-removebg-preview (1).png" id="2_4wcgq"]
-[ext_resource type="Texture2D" uid="uid://buly84xdkr7u8" path="res://os__1_-removebg-preview.png" id="2_6lbla"]
+[ext_resource type="FontFile" uid="uid://bm2cst6xrtubd" path="res://assets/Bubble Gum PERSONAL USE ONLY!.ttf" id="1_4wcgq"]
+[ext_resource type="Script" uid="uid://canvvy7gyjlej" path="res://howtoplay.gd" id="1_tujdb"]
+[ext_resource type="Texture2D" uid="uid://dw2ojpim5jfd6" path="res://assets/rulescard.png" id="2_4wcgq"]
+[ext_resource type="Texture2D" uid="uid://c7d30ji3iqyrt" path="res://assets/os__1_-removebg-preview.png" id="2_6lbla"]
+[ext_resource type="Texture2D" uid="uid://ctyrkeok3hgd4" path="res://assets/exit.png" id="4_6lbla"]
 
 [node name="Node2D" type="Node2D" unique_id=324428529]
+script = ExtResource("1_tujdb")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1346817861]
 offset_top = 4.0
@@ -15,10 +18,10 @@ color = Color(0.85246545, 0.7175448, 0.8055248, 1)
 [node name="RichTextLabel" type="RichTextLabel" parent="ColorRect" unique_id=1963576800]
 z_index = 100
 layout_mode = 0
-offset_left = 248.0
-offset_top = 62.0
-offset_right = 923.0
-offset_bottom = 179.0
+offset_left = 253.0
+offset_top = 53.0
+offset_right = 928.0
+offset_bottom = 170.0
 theme_override_colors/default_color = Color(1, 0.18039216, 0.73333335, 1)
 theme_override_fonts/normal_font = ExtResource("1_4wcgq")
 theme_override_font_sizes/normal_font_size = 84
@@ -30,11 +33,11 @@ position = Vector2(332, 190)
 texture = ExtResource("2_6lbla")
 
 [node name="Os1RemovebgPreview" type="Sprite2D" parent="ColorRect/Os1RemovebgPreview" unique_id=696146821]
-position = Vector2(615, 1)
+position = Vector2(631, -2)
 texture = ExtResource("2_6lbla")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2111178219]
-position = Vector2(583, 397)
+position = Vector2(583.00006, 405.99997)
 scale = Vector2(1.092, 0.9275)
 texture = ExtResource("2_4wcgq")
 
@@ -53,3 +56,12 @@ Add the ingredients
 
 Bake the perfect cake!"
 horizontal_alignment = 1
+
+[node name="exit" type="TextureButton" parent="." unique_id=1676446661]
+offset_left = 1054.0
+offset_top = 8.0
+offset_right = 1501.0
+offset_bottom = 567.0
+texture_normal = ExtResource("4_6lbla")
+
+[connection signal="pressed" from="exit" to="." method="_on_texture_button_pressed"]
