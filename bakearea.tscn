@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://benoh346td1gj" path="res://assets/food items/butter.png" id="8_30tqu"]
 [ext_resource type="Texture2D" uid="uid://cqo6yj5cgsuh3" path="res://assets/gears.png" id="9_oibg4"]
 [ext_resource type="PackedScene" uid="uid://b8iv2ek4v3n1s" path="res://ingredient.tscn" id="11_cv3xo"]
+[ext_resource type="Texture2D" uid="uid://dvartfoq7g65n" path="res://assets/food items/vanilla.png" id="12_nt3p5"]
+[ext_resource type="Texture2D" uid="uid://tt3gxrxhx7p2" path="res://assets/food items/cocoa.png" id="13_q0hqw"]
 
 [node name="area2D" type="Area2D" unique_id=1966559625]
 script = ExtResource("1_iyycv")
@@ -39,13 +41,13 @@ texture_normal = ExtResource("9_oibg4")
 flip_v = true
 
 [node name="milk" parent="." unique_id=421164906 instance=ExtResource("11_cv3xo")]
-position = Vector2(110, 255)
+position = Vector2(107.99999, 214)
 scale = Vector2(1.35, 1.35)
 value = "milk"
 texture = ExtResource("2_02a8a")
 
 [node name="sugar" parent="." unique_id=1134652336 instance=ExtResource("11_cv3xo")]
-position = Vector2(123, 441)
+position = Vector2(100, 426.99997)
 scale = Vector2(1.1, 1.1)
 value = "sugar"
 texture = ExtResource("3_chuha")
@@ -57,21 +59,21 @@ value = "salt"
 texture = ExtResource("4_8tp6i")
 
 [node name="flour" parent="." unique_id=707330856 instance=ExtResource("11_cv3xo")]
-position = Vector2(977, 278)
+position = Vector2(1007, 224)
 scale = Vector2(1.4, 1.4)
 value = "flour"
 flip_rotation = true
 texture = ExtResource("5_30tqu")
 
 [node name="bakingpowder" parent="." unique_id=741734760 instance=ExtResource("11_cv3xo")]
-position = Vector2(1030, 461)
+position = Vector2(1032, 440)
 scale = Vector2(1.2, 1.2)
 value = "bakingpowder"
 flip_rotation = true
 texture = ExtResource("6_oibg4")
 
 [node name="eggs" parent="." unique_id=504757412 instance=ExtResource("11_cv3xo")]
-position = Vector2(806, 535)
+position = Vector2(830.00006, 541)
 scale = Vector2(1.2, 1.2)
 value = "eggs"
 flip_rotation = true
@@ -79,11 +81,20 @@ texture = ExtResource("7_8tp6i")
 
 [node name="butter" parent="." unique_id=1373231987 instance=ExtResource("11_cv3xo")]
 z_index = 99
-position = Vector2(271, 516.99994)
+position = Vector2(234.00002, 540)
 rotation = 0.050614547
 scale = Vector2(1.1, 1.1)
 value = "butter"
 texture = ExtResource("8_30tqu")
+
+[node name="vanilla" parent="." unique_id=606314037 instance=ExtResource("11_cv3xo")]
+position = Vector2(813, 348)
+flip_rotation = true
+texture = ExtResource("12_nt3p5")
+
+[node name="cocoa" parent="." unique_id=113420878 instance=ExtResource("11_cv3xo")]
+position = Vector2(438, 502)
+texture = ExtResource("13_q0hqw")
 
 [connection signal="pressed" from="bake" to="." method="_on_bake_pressed"]
 [connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
