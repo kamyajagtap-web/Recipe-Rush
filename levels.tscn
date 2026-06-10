@@ -1,12 +1,16 @@
 [gd_scene format=3 uid="uid://b8qce3n5umx7h"]
 
-[ext_resource type="FontFile" uid="uid://lpvlb7jxd3ul" path="res://assets/Bubble Gum PERSONAL USE ONLY!.ttf" id="1_02xe8"]
-[ext_resource type="Texture2D" uid="uid://deajog7jtljsw" path="res://assets/easy.png" id="2_xv4fl"]
-[ext_resource type="Texture2D" uid="uid://fflo7oillgd4" path="res://assets/med.png" id="3_b0aun"]
-[ext_resource type="Texture2D" uid="uid://c3w41dberbbpp" path="res://assets/hard.png" id="4_x8mww"]
-[ext_resource type="Texture2D" uid="uid://buly84xdkr7u8" path="res://os__1_-removebg-preview.png" id="5_xv4fl"]
+[ext_resource type="FontFile" uid="uid://bm2cst6xrtubd" path="res://assets/Bubble Gum PERSONAL USE ONLY!.ttf" id="1_02xe8"]
+[ext_resource type="Script" uid="uid://bmrb0r4mut686" path="res://levels.gd" id="1_x8mww"]
+[ext_resource type="Texture2D" uid="uid://b15pnyb3x0rar" path="res://assets/hard.png" id="4_x8mww"]
+[ext_resource type="Texture2D" uid="uid://ccvlts13a71l3" path="res://assets/easy.png" id="5_x8mww"]
+[ext_resource type="Texture2D" uid="uid://c7d30ji3iqyrt" path="res://assets/os__1_-removebg-preview.png" id="5_xv4fl"]
+[ext_resource type="Texture2D" uid="uid://ctyrkeok3hgd4" path="res://assets/exit.png" id="6_b0aun"]
+[ext_resource type="Texture2D" uid="uid://cjk4iyyfic4r2" path="res://assets/medium.png" id="6_x8mww"]
 
 [node name="Node2D" type="Node2D" unique_id=812698673]
+position = Vector2(-1, 0)
+script = ExtResource("1_x8mww")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=347842894]
 offset_top = 4.0
@@ -17,61 +21,14 @@ color = Color(0.85246545, 0.7175448, 0.8055248, 1)
 [node name="RichTextLabel" type="RichTextLabel" parent="ColorRect" unique_id=603692557]
 z_index = 100
 layout_mode = 0
-offset_left = 260.0
-offset_top = 97.0
-offset_right = 935.0
-offset_bottom = 214.0
+offset_left = 246.0
+offset_top = 94.0
+offset_right = 921.0
+offset_bottom = 211.0
 theme_override_colors/default_color = Color(1, 0.18039216, 0.73333335, 1)
 theme_override_fonts/normal_font = ExtResource("1_02xe8")
 theme_override_font_sizes/normal_font_size = 84
 text = "Levels"
-horizontal_alignment = 1
-
-[node name="Volume" type="RichTextLabel" parent="ColorRect" unique_id=128289462]
-z_index = 90
-layout_mode = 0
-offset_left = 170.0
-offset_top = 309.0
-offset_right = 366.0
-offset_bottom = 380.0
-theme_override_colors/default_color = Color(1, 0.18039216, 0.73333335, 1)
-theme_override_font_sizes/normal_font_size = 45
-text = "Easy"
-horizontal_alignment = 1
-
-[node name="easy" type="Sprite2D" parent="." unique_id=258510105]
-position = Vector2(265, 392.00003)
-scale = Vector2(0.61, 0.621)
-texture = ExtResource("2_xv4fl")
-
-[node name="med" type="Sprite2D" parent="." unique_id=666061939]
-position = Vector2(601, 397)
-scale = Vector2(0.63, 0.616)
-texture = ExtResource("3_b0aun")
-
-[node name="hard" type="Sprite2D" parent="." unique_id=7555403]
-position = Vector2(934, 399.00003)
-scale = Vector2(0.60850006, 0.618)
-texture = ExtResource("4_x8mww")
-
-[node name="Volume" type="RichTextLabel" parent="." unique_id=2076798843]
-offset_left = 504.0
-offset_top = 314.0
-offset_right = 700.0
-offset_bottom = 385.0
-theme_override_colors/default_color = Color(1, 0.18039216, 0.73333335, 1)
-theme_override_font_sizes/normal_font_size = 45
-text = "Medium"
-horizontal_alignment = 1
-
-[node name="Volume2" type="RichTextLabel" parent="." unique_id=813609940]
-offset_left = 837.0
-offset_top = 321.0
-offset_right = 1033.0
-offset_bottom = 392.0
-theme_override_colors/default_color = Color(1, 0.18039216, 0.73333335, 1)
-theme_override_font_sizes/normal_font_size = 45
-text = "Hard"
 horizontal_alignment = 1
 
 [node name="Os1RemovebgPreview" type="Sprite2D" parent="." unique_id=471836406]
@@ -82,3 +39,41 @@ texture = ExtResource("5_xv4fl")
 position = Vector2(573, 31.000015)
 scale = Vector2(0.8490991, 1.1873335)
 texture = ExtResource("5_xv4fl")
+
+[node name="exit" type="TextureButton" parent="." unique_id=1135605470]
+offset_left = 1053.0
+offset_top = -454.0
+offset_right = 1500.0
+offset_bottom = 105.0
+texture_normal = ExtResource("6_b0aun")
+stretch_mode = 1
+flip_v = true
+
+[node name="easy" type="TextureButton" parent="." unique_id=1314955459]
+z_index = 200
+offset_left = 60.0
+offset_top = 208.0
+offset_right = 380.0
+offset_bottom = 556.0
+texture_normal = ExtResource("5_x8mww")
+
+[node name="medium" type="TextureButton" parent="." unique_id=1680295089]
+z_index = 100
+offset_left = 417.0
+offset_top = 214.0
+offset_right = 749.0
+offset_bottom = 558.0
+texture_normal = ExtResource("6_x8mww")
+
+[node name="hard" type="TextureButton" parent="." unique_id=1039483831]
+offset_left = 777.0
+offset_top = 210.0
+offset_right = 1096.0
+offset_bottom = 549.0
+texture_normal = ExtResource("4_x8mww")
+ignore_texture_size = true
+
+[connection signal="pressed" from="exit" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="easy" to="." method="_on_easy_pressed"]
+[connection signal="pressed" from="medium" to="." method="_on_medium_pressed"]
+[connection signal="pressed" from="hard" to="." method="_on_hard_pressed"]

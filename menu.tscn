@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cjvnuvogl5osf"]
 
 [ext_resource type="Script" uid="uid://kqmv6euhpwsq" path="res://homemenu.gd" id="1_mae5d"]
-[ext_resource type="FontFile" uid="uid://lpvlb7jxd3ul" path="res://assets/Bubble Gum PERSONAL USE ONLY!.ttf" id="2_4hy44"]
-[ext_resource type="Texture2D" uid="uid://buly84xdkr7u8" path="res://os__1_-removebg-preview.png" id="4_4hy44"]
+[ext_resource type="FontFile" uid="uid://bm2cst6xrtubd" path="res://assets/Bubble Gum PERSONAL USE ONLY!.ttf" id="2_4hy44"]
+[ext_resource type="Texture2D" uid="uid://c7d30ji3iqyrt" path="res://assets/os__1_-removebg-preview.png" id="4_4hy44"]
 
 [node name="Menu" type="Node2D" unique_id=217108690]
 script = ExtResource("1_mae5d")
