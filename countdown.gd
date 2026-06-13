@@ -13,8 +13,10 @@ func _ready():
 	var first_ingredient = Global.correct_order[0]
 	get_tree().change_scene_to_file("res://cards/" + first_ingredient + ".tscn")
 
+# Shows seconds as whole numbers
 func time_left():
 	return int(countdown.time_left)
-	
+
+# Portrays the seconds as text
 func _process(delta):
 	label.text = str(time_left())
